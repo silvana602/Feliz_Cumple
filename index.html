@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feliz Cumpleaños</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Audio de fondo -->
+  <audio id="bgMusic" loop>
+    <source src="audio/mai.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <main class="app">
+    <!-- Login -->
+    <section id="loginScreen" class="screen center">
+      <div class="login-card">
+        <h2>🎂 Introduce la contraseña</h2>
+        <input id="passwordInput" type="password" placeholder="••••" inputmode="numeric" maxlength="6" />
+        <button id="enterBtn" class="btn primary">Entrar</button>
+        <p class="hint">Fecha de cumple (solo numeros)</p>
+      </div>
+    </section>
+
+    <!-- Pantalla principal -->
+    <section id="cakeScreen" class="screen hidden center">
+      <div class="scene">
+        <div class="banner-container">
+  <div class="banner banner-1"></div>
+  <div class="banner banner-2"></div>
+</div>
+
+        <div class="cake-area">
+          <div class="cake">
+            <div class="layer layer-3"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-1"></div>
+            <div class="frosting"></div>
+            <div class="candle">
+              <div class="flame"></div>
+            </div>
+          </div>
+          <div class="cake-ground"></div>
+        </div>
+
+        <button id="nextBtn" class="next-btn">NEXT 🎁</button>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <div id="envelopeWrap" class="envelope-wrap hidden">
+      <div class="envelope-container">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+        </div>
+        <div class="envelope-controls">
+          <button id="openBtn" class="envelope-btn">OPEN</button>
+          <button id="closeBtn" class="envelope-btn">CLOSE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal carta completa -->
+    <div id="letterModal" class="modal hidden">
+      <div id="modalBackdrop" class="backdrop"></div>
+      <div class="modal-content">
+        <div class="paper">
+          <h3>¡FELIZ CUMPLEAÑOS!</h3>
+          <p class="message">
+            Siempre he visto en los cumpleaños la oportunidad de reinventarse y buscar la mejor versión de uno mismo, pero creo que tú ya estás muy cerca de la tuya. Quiero que nunca olvides todas las cualidades que hacen que tantas personas agradezcamos hoy el hecho de tenerte en nuestras vidas, de compartir contigo la aventura de la vida.
+
+            No sólo quiero desearte un feliz día de cumpleaños, sino también que todos los días elijas ser así de feliz.
+
+            ¿Sabes que justo hoy inicia un nuevo año de vida para ti? Por eso espero que, como si fuera un 31 de diciembre, tu cabeza esté llena de propósitos y sueños por cumplir, porque de eso se trata celebrar tu vida: de vivirla con intensidad y disfrutar todo aquello que te hace ser simplemente tú.
+
+            ¡Feliz cumpleaños!
+            Te quiero.
+          </p>
+          <p class="signature">¡Feliz cumpleaños! 🎉</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
